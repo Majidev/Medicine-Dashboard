@@ -1,0 +1,301 @@
+a {
+  color: black;
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/arciformff/Arciform.otf");
+}
+body {
+  font-family: vazir;
+  overflow-x: hidden;
+}
+
+.header-icon {
+  width: 30px;
+  height: 30px;
+}
+.sidebar-head {
+  display: -webkit-box;
+}
+
+.hr-line {
+  margin-top: 30px;
+  width: 180px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px !important;
+}
+.icon-muted {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px !important;
+  filter: contrast(0.1);
+}
+#sidebar {
+  border-top-right-radius: 20px;
+  height: 745px !important;
+
+  padding-top: 20px;
+}
+
+#container {
+  background-color: rgba(115, 209, 209, 0.103) !important;
+}
+#profile-card {
+  border-radius: 35px;
+  border: none;
+  box-shadow: 2px 3px 10px #b1b1b1a9;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+.activity-card {
+  border-radius: 35px;
+  border: none;
+  box-shadow: 2px 3px 10px #b1b1b1a9;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  margin-left: 34px !important;
+}
+.profile-image {
+  width: 66px;
+  height: 65px;
+}
+.th-1 {
+  border-top: none !important;
+}
+table th {
+  padding: 30px !important;
+}
+.th-2 {
+  border-top: none !important;
+  border-left: 1px solid #dee2e6;
+  padding: 0 !important;
+}
+
+.th-4 {
+  border-left: 1px solid #dee2e6;
+
+  padding: 0 !important;
+}
+table p {
+  font-size: 13px;
+}
+
+.tr-2 {
+  margin-top: 100px;
+}
+
+.value {
+  font-size: 15px;
+}
+
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
+
+#generalh-card {
+  border-radius: 35px;
+  border: none;
+  box-shadow: 2px 3px 10px #b1b1b1a9;
+  letter-spacing: 1.5px;
+  padding-bottom: 70px !important;
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+  margin-left: 34px !important;
+}
+
+.activity-header-text {
+  margin-top: 6px;
+}
+
+#generalhchart {
+  margin-top: 0px !important;
+}
+
+.generalhchart-text {
+  margin-bottom: 0px !important;
+}
+#healthcondition-chart{
+  width: 900px !important;
+}
+#date-card {
+  border-radius: 35px;
+  border: none;
+  box-shadow: 2px 3px 10px #b1b1b1a9;
+  letter-spacing: 1.5px;
+  padding: 10px;
+  margin-top: 10px !important;
+}
+
+.dr-cat img {
+  border-radius: 15px;
+}
+
+.cat1 {
+  border-radius: 15px;
+  height: 60px;
+  width: 205px;
+  background-image: url("../Background1/PurpleBack/SVG/SVG/prpl2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.cat2 {
+  border-radius: 15px;
+  height: 60px;
+  width: 205px;
+  background-image: url("../Background1/BlueBack/SVG/blue3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cat3 {
+  border-radius: 15px;
+  height: 60px;
+  width: 205px;
+  background-image: url("../Background1/YellowBack/SVG/yellow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cat4 {
+  border-radius: 15px;
+  height: 60px;
+  width: 205px;
+  background-image: url("../Background1/RedBack/SVG/redf.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white-square {
+  font-size: 14px;
+  text-align: center;
+  display: inline;
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 15px;
+  height: 40px;
+  width: 60px;
+  padding-top: inherit;
+}
+
+.white-square img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  padding-top: inherit;
+}
+
+#healthcondition-chart {
+  height: 200px;
+  width: 700px;
+  color: #396478;
+}
+
+#healthcondition-chart {
+  border-radius: 35px;
+  margin-top: 10px !important;
+}
+
+.dr-cat {
+  display: inline-grid;
+  margin-top: 0px !important;
+  top: 0px !important;
+  scroll-margin-top: 0px;
+}
+.healthcondition-card {
+  border-radius: 35px;
+  border: none;
+  box-shadow: 2px 3px 10px #b1b1b1a9;
+}
+#date-card {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  #healthcondition-chart {
+    width: 400px;
+    height: 100%;
+    /* margin-left: auto !important; */
+  }
+  .dr-cat {
+    margin: 0px !important;
+  }
+  .activity-card {
+    margin-left: auto !important;
+  }
+  #profile-card {
+    margin-left: auto !important;
+  }
+  #generalh-card{
+    margin-left: auto !important;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+
+  }
+  #sidebar{
+    height: 50% !important;
+  }
+  .sidebar-head{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#calendar {
+  margin-top: 20px !important;
+}
+
+#collapse-icon{
+  width: 50px !important;
+  height: 50px !important;
+}
+.dr-cat p{
+  font-size: 12px;
+}
+.dr-cat-icon{
+  color: beige !important;
+  margin-right: auto;
+  width: 35px;
+  height: 35px;
+}
+
+.dr-name{
+  color: rgb(203, 206, 206);
+}
+
+.cat-name{
+  display: flex;
+  align-items: center;
+}
+.cat-name p{
+  margin: auto;
+}
+
+#calendar{
+  border-radius: 150px !important;
+}
+
+.collapse-icon{
+  display: flex;
+  margin: auto;
+}

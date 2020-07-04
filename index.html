@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./Style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/css/style.css">
+    <link rel="stylesheet" href="./Style/css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="./Style/css/datepicker.css">
+
+    <!-- AmcHarts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
+
+    <!--  JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap.js"></script>
+
+    <!-- DatePicker -->
+    <script
+        src="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.nl.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-12 col-md-2 bg-white text-light sticky mt-0 p-2" id="sidebar">
+               
+
+
+                <div class="sidebar-head mt-5">
+                    <img src="./Style/icon/healthbeat2.png" class="header-icon mr-1 mb-2">
+                    <h3 class=""><span class="text-primary">Good</span> <span class="text-danger">Health</span>
+                    </h3>
+                </div>
+                <img class="img-fluid collapse-icon" id="collapse-icon1" data-toggle="collapse" href="#content" src="./Style/icon/collapse-icon1.png"
+                aria-controls="content">
+
+                <div class="content collapse" id="content">
+                    <ul class="nav flex-column px-3  p-4">
+                        <li class="nav-item d-flex align-items-center">
+                            <img src="./Style/icon/overview2.png" class="icon">
+                            <a href="#" class="text-dark">Overview</a></li>
+                        <div class="text-muted">
+                            <li class="nav-item d-flex align-items-center mt-3 "> <img src="./Style/icon/department.png"
+                                    class="icon icon-muted">
+                                <a href="#" class="m-2 text-muted">Departements</a></li>
+                            <li class="nav-item d-flex align-items-center mt-3"><img src="./Style/icon/dr2.png"
+                                    class="icon-muted">
+                                <a href="#" class="m-2 text-muted">Doctors </a></li>
+                            <li class="nav-item d-flex align-items-center mt-3"><img src="./Style/icon/chart.png"
+                                    class="icon-muted">
+                                <a href="#" class=" m-2 text-muted">Analyzes </a></li>
+                            <li class="nav-item d-flex align-items-center mt-3"><img src="./Style/icon/history.png"
+                                    class="icon-muted">
+                                <a href="#" class="m-2 text-muted">History </a></li>
+
+                            <li class="nav-item d-flex align-items-center mt-3"><img src="./Style/icon/message2.png"
+                                    class="icon-muted">
+                                <a href="#" class="m-2 text-muted flex-start">Messages <span
+                                        class="badge badge-danger ml-2">14</span></a></li>
+
+
+
+
+                        </div>
+                    </ul>
+                </div>
+                <hr class="hr-line">
+            </div>
+            <div class="col-md-10 " id="main-content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="card bg-white ml-auto " id="profile-card" style="height:400px;">
+                                    <div class="card-body  text-center">
+                                        <img src="./Style/images/pro1.jpg" alt="profile-image"
+                                            class="rounded-circle profile-image">
+                                        <h5 class="mt-3">Talan Philips</h5>
+                                        <div class="mt-5">
+                                            <table class="table mt-4 ">
+                                                <tr class="tr1">
+                                                    <th class="th-1" scope="row">
+                                                        <p class="value">24</p>
+                                                        <p class="text-muted mt-3">Years</p>
+                                                    </th>
+
+                                                    <th class="th-2" scope="row">
+                                                        <p class="value">A+</p>
+                                                        <p class="text-muted mt-3">Blood</p>
+                                                    </th>
+
+
+                                                </tr>
+                                                <tr class="tr-2">
+                                                    <th scope="row">
+                                                        <p class="mt-3 value">187cm</p>
+                                                        <p class="text-muted mt-3">Height</p>
+                                                    </th>
+                                                    <th class="th-4" scope="row">
+                                                        <p class="mt-3 value">91kg</p>
+                                                        <p class="text-muted mt-3">Weight</p>
+                                                    </th>
+
+
+                                                </tr>
+
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-white ml-auto  activity-card" style="height: 50% ; width: 100%;">
+                                    <p class="ml-3 activity-header-text mt-3">YourActivity</p>
+                                    <div class="card-body" id="activitychart" style="height: 100% ; width: 100%;">
+
+                                    </div>
+                                </div>
+                                <div class="card bg-white mt-3  ml-auto  text-center" id="generalh-card"
+                                    style="height:160px ; width:100%;">
+                                    <div class="card-body ">
+                                        <div class="row">
+                                            <div class="text-center col-md-6 col-6">
+                                                <h6 class="generalhchart-text p-0">General Health</h6>
+                                                <div class="" id="generalhchart" style="height: 90px ; width: 100%;">
+
+                                                </div>
+                                            </div>
+                                            <div class="text-center col-md-6 col-6">
+                                                <h6 class="generalhchart-text p-0">Water Balance</h6>
+                                                <div class="" id="waterchart" style="height: 100px ; width: 100%;">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 6">
+                            <div class="card bg-white border-0 ml-auto healthcondition-card">
+                           <p class="ml-3 mt-3">Your Health Conditions</p>
+                                <div class="card-body" id="healthcondition-chart">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card bg-white mr-auto mx-auto h-100 w-100 " id="date-card">
+                            <div class="card-body d-flex justify-content-center" id="calendar">
+
+                            </div>
+                            <hr class="mb-5">
+                            <div class="dr-cat  justify-content-center">
+                                <div class=" bg-white   border-0 ">
+                                    <div class="cat1 mt-0 pt-2">
+                                      
+                                        <img src="./Style/icon/dentist.png"
+                                            class="img-fluid d-flex align-items-center justify-content-start dr-cat-icon "
+                                            alt="">
+                                        <div class="cat-name d-inline-block ml-2">
+                                            <p class="mr-5 text-white ">Dentist</p>
+                                            <p class="dr-name">Dr.Fr-Al</p>
+                                        </div>
+                                        
+
+                                        <div class="white-square d-flex align-items-center justify-content-center  ">
+                                            <p class=" d-flex align-items-center">10‌‎‍‌AM</p>
+                                            <img src="./Style/icon/flash-right.png" class="img-fluid " alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="bg-white  border-0">
+                                    <div class=" cat2 mt-2 pt-2">
+
+                                        <img src="./Style/icon/cardiologist.png"
+                                        class="img-fluid d-flex align-items-center justify-content-start dr-cat-icon "
+                                        alt="">
+                                    <div class="cat-name d-inline-block ml-2">
+                                        <p class="mr-5 text-white ">Dentist</p>
+                                        <p class="dr-name">Dr.Fr-Al</p>
+                                    </div>
+
+
+                                        <div class="white-square d-flex align-items-center justify-content-center">
+
+                                            <p class=" d-flex align-items-center">12PM</p>
+                                            <img src="./Style/icon/flash-right.png" class="img-fluid " alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-0">
+                                    <div class="cat3 mt-2 pt-2">
+
+                                        <img src="./Style/icon/eye.png"
+                                        class="img-fluid d-flex align-items-center justify-content-start dr-cat-icon "
+                                        alt="">
+                                    <div class="cat-name d-inline-block ml-2">
+                                        <p class="mr-5 text-white ">Dentist</p>
+                                        <p class="dr-name">Dr.Fr-Al</p>
+                                    </div>
+
+
+
+
+                                        <div class="white-square d-flex align-items-center justify-content-center">
+
+                                            <p class=" d-flex align-items-center">04‌‎‍‌PM</p>
+                                            <img src="./Style/icon/flash-right.png" class="img-fluid " alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border-0 mt-2 ">
+                                    <div class="cat4 pt-2">
+                                        <div class="white-square d-flex align-items-center justify-content-center">
+
+                                            <p class=" d-flex align-items-center">07‌‎‍‌PM</p>
+                                            <img src="./Style/icon/flash-right.png" class="img-fluid " alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+    <script src="./Style/js/main.js"></script>
+    <script src="./Style/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
