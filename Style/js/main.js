@@ -286,7 +286,7 @@ am4core.ready(function() {
     "price": 400
   }, {
     "date": "2012-03-11",
-    "price": 600
+    "price": 20000
   }, ];
   
   // Create axes

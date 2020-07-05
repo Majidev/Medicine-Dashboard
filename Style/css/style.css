@@ -4,13 +4,14 @@ a {
 }
 
 @font-face {
-  font-family: "vazir";
-  src: url("../fonts/arciformff/Arciform.otf");
+  font-family: "myfont";
+  src: url("../fonts/TCM_____.TTF");
 }
 body {
-  font-family: vazir;
+  font-family: myfont;
   overflow-x: hidden;
-}
+  font-weight: 1000;
+  }
 
 .header-icon {
   width: 30px;
@@ -38,9 +39,13 @@ body {
 }
 #sidebar {
   border-top-right-radius: 20px;
-  height: 745px !important;
-
+  /* height: 745px; */
   padding-top: 20px;
+  font-size: 17px;
+}
+.sidebar-head h3{
+  font-size: 30px;
+  font-weight: 700;
 }
 
 #container {
@@ -52,6 +57,16 @@ body {
   box-shadow: 2px 3px 10px #b1b1b1a9;
   letter-spacing: 1.5px;
   margin-top: 10px;
+  margin-left: 21px !important;
+}
+
+#profile-card h5{
+  font-size: 30px;
+  font-weight: 700;
+}
+#profile-card p{
+  font-size: 19px;
+  font-weight: 1000;
 }
 .activity-card {
   border-radius: 35px;
@@ -60,6 +75,10 @@ body {
   letter-spacing: 1.5px;
   margin-top: 10px;
   margin-left: 34px !important;
+}
+.activity-card p{
+  font-size: 21px;
+  font-weight: 1000;
 }
 .profile-image {
   width: 66px;
@@ -120,9 +139,15 @@ table p {
 
 .generalhchart-text {
   margin-bottom: 0px !important;
+  font-size: 21px;
+  font-weight: 1000;
 }
 #healthcondition-chart{
   width: 900px !important;
+}
+.healthcondition-card p{
+  font-size: 21px;
+  font-weight: 1000;
 }
 #date-card {
   border-radius: 35px;
@@ -204,8 +229,9 @@ table p {
 }
 
 #healthcondition-chart {
-  height: 200px;
-  width: 700px;
+  height: 270px;
+  
+  width: 750px !important;
   color: #396478;
 }
 
@@ -228,10 +254,12 @@ table p {
 #date-card {
   color: black;
 }
-
+@media only screen and (min-width:600px){
+ 
+}
 @media only screen and (max-width: 600px) {
   #healthcondition-chart {
-    width: 400px;
+    width: 100px !important;
     height: 100%;
     /* margin-left: auto !important; */
   }
@@ -252,12 +280,13 @@ table p {
     justify-content: center;
 
   }
+ 
   #sidebar{
-    height: 50% !important;
+    height: 20% !important;
   }
   .sidebar-head{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 
